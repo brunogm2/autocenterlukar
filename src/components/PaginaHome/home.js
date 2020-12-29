@@ -1,10 +1,20 @@
 import React from 'react';
 
 import { Header, Menu, Logo, IconeInstagram, ImgCarousel,
-     ContainerSection, Section, ImgSec1, DivSec1} from './style';
+     ContainerSection, Section, ImgSec1, DivSec1,
+     ContainerSection2,
+     SlimContact, ContactWhats,
+    Footer, DivFooter, ColumnFooterLeft, SocialMedia, Line,
+    ColumnFooterCenter,
+    ColumnFooterRight} from './style';
 import Carousel from 'react-bootstrap/Carousel'
 
 import testeps6 from "../../assets/testeps6.jpg"
+import instagram from "../../assets/instagram.png"
+import whats from "../../assets/whats.png"
+import logo from "../../assets/logo.png"
+import face from "../../assets/face.png"
+import faixada from "../../assets/faixada.png"
 
 function Home(){
     return(
@@ -14,7 +24,9 @@ function Home(){
             <Menu> Home </Menu>
             <Menu> Mecânica </Menu>
             <Menu> Contato </Menu>
-            <IconeInstagram/>
+            <IconeInstagram>
+                <img src={instagram} alt="imagem slider1"/> 
+            </IconeInstagram>
         </Header>
         <Carousel>
             <Carousel.Item>
@@ -36,6 +48,9 @@ function Home(){
                     <h1>
                         Nossos valores
                     </h1>
+                    <span>
+                        POR DENTRO DE NOSSA HISTORIA.
+                    </span>
                     <p>
                     Lorem Ipsum is simply dummy text
                      of the printing and typesetting industry.
@@ -51,6 +66,28 @@ function Home(){
                 </DivSec1>
             </Section>
         </ContainerSection>
+        <ContainerSection2>
+
+        </ContainerSection2>
+        <SlimContact>
+            <ContactWhats>
+                <img src={whats} alt="imagem slider1"/> 
+                Entre em contato
+            </ContactWhats>
+        </SlimContact>
+        <Footer>
+            <DivFooter>
+                <ColumnFooterLeft>
+                    
+                </ColumnFooterLeft>
+                <ColumnFooterCenter>
+               
+                </ColumnFooterCenter>
+                <ColumnFooterRight>
+                
+                </ColumnFooterRight>
+            </DivFooter>
+        </Footer>
     </>
     )
 }
